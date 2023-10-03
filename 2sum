@@ -7,6 +7,10 @@ class Solution {
             for(int j = i+1; j < nums.length; j++) {
 			 // j = i + 1; no need to check back elements it covers in i;
                 if(nums[i] + nums[j] == target) {
+				// Check sum == target or not
+                    answer[0] = i;
+                    answer[1] = j;
+                    return answer;
                 }
             } 
         }
